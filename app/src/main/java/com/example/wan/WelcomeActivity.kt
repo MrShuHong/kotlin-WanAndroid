@@ -5,6 +5,7 @@ import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.core.view.ViewPropertyAnimatorListener
 import com.example.wan.base.BaseActivity
+import com.example.wan.home.activity.MainActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 
