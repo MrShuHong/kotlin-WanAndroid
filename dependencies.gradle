@@ -1,0 +1,15 @@
+ext {
+
+    android = [
+            compileSdkVersion      : 28,
+            applicationId          : "com.example.wan",
+            minSdkVersion          : 21,
+            targetSdkVersion       : 28,
+            versionCode            : 1,
+            versionName            : "1.0.00"
+    ]
+
+    retrofit = '2.7.0'
+    rxjava = '2.2.0'
+    rxandroid = '2.0.2'
+}
