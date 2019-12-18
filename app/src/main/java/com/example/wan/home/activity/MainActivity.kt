@@ -30,7 +30,7 @@ class MainActivity : BaseActivity() {
 
         recyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        homeArticleAdapter =HomeArticleAdapter(R.layout.adapter_home_article)
+        homeArticleAdapter = HomeArticleAdapter(R.layout.adapter_home_article)
         recyclerView.adapter = homeArticleAdapter
 
         var disposable = HttpUtils
