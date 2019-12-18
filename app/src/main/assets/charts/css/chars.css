@@ -1,0 +1,36 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background:#eeeeee;
+    box-sizing: border-box;
+}
+.title {
+    font-size: 18px;
+    font-weight:bold;
+	columns: #333333;;
+}
+
+.wrap1 {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius:5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.data-curves {
+    width: 100%;
+    height: 250px;
+
+    margin-top: 10px;
+    background-color: #0cabdf;
+}

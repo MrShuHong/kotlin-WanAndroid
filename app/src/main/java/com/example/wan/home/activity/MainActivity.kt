@@ -1,18 +1,22 @@
 package com.example.wan.home.activity
 
+import android.content.Intent
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wan.R
+import com.example.wan.WebViewActivity
 import com.example.wan.base.BaseActivity
 import com.example.wan.home.adapter.HomeArticleAdapter
 import com.example.wan.utils.http.HttpUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivity(), View.OnClickListener {
+
 
     private lateinit var toolbar:Toolbar
 
@@ -27,7 +31,7 @@ class MainActivity : BaseActivity() {
         super.initView()
         toolbar = findViewById(R.id.toolbar)
         toolbar.title = "WanAndroid"
-
+        toolbar.setOnClickListener(this)
         recyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
         homeArticleAdapter = HomeArticleAdapter(R.layout.adapter_home_article)
@@ -55,7 +59,9 @@ class MainActivity : BaseActivity() {
     }
 
 
-
+    override fun onClick(v: View?) {
+        startActivity(Intent(this,WebViewActivity::class.java))
+    }
 
 
 }
