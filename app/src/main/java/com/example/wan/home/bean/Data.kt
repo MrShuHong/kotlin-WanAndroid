@@ -7,5 +7,5 @@ data class Data(
     var pageCount: Int,
     var curPage: Int,
     var over: Boolean,
-    var datas: List<ArticleItem>?
+    var datas: MutableList<ArticleItem>?
 )

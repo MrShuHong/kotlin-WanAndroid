@@ -33,7 +33,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61"
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -51,10 +51,15 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
     implementation 'commons-lang:commons-lang:2.6'
 
     implementation 'com.github.bumptech.glide:glide:4.10.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    implementation 'com.bigkoo:convenientbanner:2.1.5'
+
 
     //implementation 'com.tencent.tbs.tbssdk:sdk:43697'
     implementation 'com.github.wendux:DSBridge-Android:x5-3.0-SNAPSHOT'
